@@ -21,4 +21,10 @@ class SuperHeroTest {
     assertEquals("Gotham City", superHero.getCity());
   }
 
+  @Test
+  public void testToString() {
+    SuperHero superHero = new SuperHero("Superman", "Metropolis");
+    assertEquals(superHero.toString(), "SuperHero(name=Superman, city=Metropolis)");
+  }
+
 }
