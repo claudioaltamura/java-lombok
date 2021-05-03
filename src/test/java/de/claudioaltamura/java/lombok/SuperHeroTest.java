@@ -7,14 +7,14 @@ import org.junit.jupiter.api.Test;
 class SuperHeroTest {
 
   @Test
-  public void testNoArgsConstructor() {
+   void testNoArgsConstructor() {
     SuperHero superHero = new SuperHero();
 
     assertNotNull(superHero);
   }
 
   @Test
-  public void testAllArgsConstructor() {
+   void testAllArgsConstructor() {
     SuperHero superHero = new SuperHero("Batman", "Gotham City");
 
     assertEquals("Batman", superHero.getName());
@@ -22,7 +22,7 @@ class SuperHeroTest {
   }
 
   @Test
-  public void testEquals() {
+   void testEquals() {
     SuperHero superHero1 = new SuperHero("Flash", "Central City");
     SuperHero superHero2 = new SuperHero("Flash", "Central City");
 
@@ -30,10 +30,10 @@ class SuperHeroTest {
   }
 
   @Test
-  public void testToString() {
+   void testToString() {
     SuperHero superHero = new SuperHero("Superman", "Metropolis");
 
-    assertEquals(superHero.toString(), "SuperHero(name=Superman, city=Metropolis)");
+    assertEquals("SuperHero(name=Superman, city=Metropolis)", superHero.toString());
   }
 
 }
