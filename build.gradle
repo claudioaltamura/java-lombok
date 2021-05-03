@@ -1,25 +1,22 @@
 plugins {
 	id 'java'
 	id 'application'
+    id 'com.github.ben-manes.versions' version '0.38.0'
+    id 'com.diffplug.spotless' version '5.0.0'
 }
-
-apply plugin: 'eclipse'
-apply plugin: 'idea'
-
-mainClassName="de.claudioltamura.java.lombok.JavaLombokApplication"
 
 group = 'de.claudioaltamura.java.lombok'
 version = '0.0.1-SNAPSHOT'
 
-sourceCompatibility = '1.8'
+sourceCompatibility = '11'
 
 repositories {
 	mavenCentral()
 }
 
 dependencies {
-	compileOnly 'org.projectlombok:lombok:1.18.8'
-	annotationProcessor 'org.projectlombok:lombok:1.18.8'
+	compileOnly 'org.projectlombok:lombok:1.18.20'
+	annotationProcessor 'org.projectlombok:lombok:1.18.20'
 
 	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.4.2'
 	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.4.2'
