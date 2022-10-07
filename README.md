@@ -4,3 +4,5 @@
 
 # java-lombok
 Java examples with Lombok
+
+* Builder
