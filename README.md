@@ -5,4 +5,10 @@
 # java-lombok
 Java examples with Lombok
 
+*  *ArgsConstructor
+* EqualsAndHashCode
+* ToString
+
 * Builder
+* Data
+* Value
