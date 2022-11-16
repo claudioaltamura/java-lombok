@@ -5,10 +5,14 @@
 # java-lombok
 Java examples with Lombok
 
-*  *ArgsConstructor
-* EqualsAndHashCode
-* ToString
+* @NoArgsConstructor
+* @AllArgsConstructor 
+* @Getter 
+* @Setter 
+* @EqualsAndHashCode 
+* @ToString
 
-* Builder
-* Data
-* Value
+* @Builder
+* @Data
+* @Value
+* @FieldDefaults
